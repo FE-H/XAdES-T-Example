@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+	<cbc:ID>INV12345</cbc:ID>
+	<cbc:IssueDate>2017-11-26</cbc:IssueDate>
+	<cbc:IssueTime>15:30:00Z</cbc:IssueTime>
+	<cbc:InvoiceTypeCode listVersionID="1.0">01</cbc:InvoiceTypeCode>
+	<cbc:DocumentCurrencyCode>MYR</cbc:DocumentCurrencyCode>
+	<cac:InvoicePeriod>
+		<cbc:StartDate>2017-11-26</cbc:StartDate>
+		<cbc:EndDate>2017-11-30</cbc:EndDate>
+		<cbc:Description>Monthly</cbc:Description>
+	</cac:InvoicePeriod>
+	<cac:BillingReference>
+		<cac:InvoiceDocumentReference>
+			<cbc:ID>INV54321</cbc:ID>
+			<cbc:UUID>F9D425P6DS7D8IU</cbc:UUID>
+		</cac:InvoiceDocumentReference>
+	</cac:BillingReference>
+	<cac:BillingReference>
+		<cac:AdditionalDocumentReference>
+			<cbc:ID>L1</cbc:ID>
+		</cac:AdditionalDocumentReference>
+	</cac:BillingReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>L1</cbc:ID>
+		<cbc:DocumentType>CustomsImportForm</cbc:DocumentType>
+	</cac:AdditionalDocumentReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>FTA</cbc:ID>
+		<cbc:DocumentType>FreeTradeAgreement</cbc:DocumentType>
+		<cbc:DocumentDescription>Sample Description</cbc:DocumentDescription>
+	</cac:AdditionalDocumentReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>L1</cbc:ID>
+		<cbc:DocumentType>K2</cbc:DocumentType>
+	</cac:AdditionalDocumentReference>
+	<cac:AdditionalDocumentReference>
+		<cbc:ID>L1</cbc:ID>
+	</cac:AdditionalDocumentReference>
+	<cac:AccountingSupplierParty>
+		<cbc:AdditionalAccountID schemeAgencyName="CertEX"/>
+		<cac:Party>
+			<cbc:IndustryClassificationCode name="Growing of maize">01111</cbc:IndustryClassificationCode>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="TIN">C948329382</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="NRIC">123456789012</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:CityName>Cyberjaya</cbc:CityName>
+				<cbc:PostalZone>63000</cbc:PostalZone>
+				<cbc:CountrySubentityCode>Selangor</cbc:CountrySubentityCode>
+				<cac:AddressLine>
+					<cbc:Line>Persiaran Rimba Permai</cbc:Line>
+				</cac:AddressLine>
+				<cac:AddressLine>
+					<cbc:Line>Cyber 8</cbc:Line>
+				</cac:AddressLine>
+				<cac:AddressLine>
+					<cbc:Line>63000 Cyberjaya</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode listAgencyID="6" listID="ISO3166-1">MYS</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>AMS Setia Jaya Sdn. Bhd.</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>+96-9876543210</cbc:Telephone>
+				<cbc:ElectronicMail>xyz@test.com</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="TIN">C948329382</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="NRIC">L1</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PostalAddress>
+				<cbc:CityName>Kuala Lumpur</cbc:CityName>
+				<cbc:PostalZone>50200</cbc:PostalZone>
+				<cbc:CountrySubentityCode>Wilayah Persekutuan</cbc:CountrySubentityCode>
+				<cac:AddressLine>
+					<cbc:Line>Lot 5 08</cbc:Line>
+				</cac:AddressLine>
+				<cac:AddressLine>
+					<cbc:Line>5th Floor</cbc:Line>
+				</cac:AddressLine>
+				<cac:AddressLine>
+					<cbc:Line>Wisma Cosway Jalan Raja Chulan</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode listAgencyID="6" listID="ISO3166-1">MYS</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Chuan Sin Sdn. Bhd.</cbc:RegistrationName>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>+96-9876543210</cbc:Telephone>
+				<cbc:ElectronicMail>xyz@test.com</cbc:ElectronicMail>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode>31</cbc:PaymentMeansCode>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>L1</cbc:ID>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+	<cac:PaymentTerms>
+		<cbc:Note>Penalty percentage 10% from due date</cbc:Note>
+	</cac:PaymentTerms>
+	<cac:PrepaidPayment>
+		<cbc:ID>L1</cbc:ID>
+		<cbc:PaidAmount currencyID="MYR">1.0</cbc:PaidAmount>
+		<cbc:PaidDate>2000-01-01</cbc:PaidDate>
+		<cbc:PaidTime>12:00:00</cbc:PaidTime>
+	</cac:PrepaidPayment>
+	<cac:AllowanceCharge>
+		<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+		<cbc:AllowanceChargeReason>Sample Description</cbc:AllowanceChargeReason>
+		<cbc:Amount currencyID="MYR">100</cbc:Amount>
+	</cac:AllowanceCharge>
+	<cac:AllowanceCharge>
+		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+		<cbc:AllowanceChargeReason>Sample Description</cbc:AllowanceChargeReason>
+		<cbc:Amount currencyID="MYR">100</cbc:Amount>
+	</cac:AllowanceCharge>
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="MYR">60.00</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="MYR">60.00</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="MYR">1000.00</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>01</cbc:ID>
+				<cac:TaxScheme>
+					<cbc:ID schemeAgencyID="6" schemeID="UN/ECE 5153">OTH</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="MYR">1436.5</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="MYR">1436.5</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="MYR">1436.5</cbc:TaxInclusiveAmount>
+		<cbc:AllowanceTotalAmount currencyID="MYR">1436.5</cbc:AllowanceTotalAmount>
+		<cbc:ChargeTotalAmount currencyID="MYR">1436.5</cbc:ChargeTotalAmount>
+		<cbc:PayableRoundingAmount currencyID="MYR">0.30</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="MYR">1436.5</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+	<cac:InvoiceLine>
+		<cbc:ID>1234</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="C62">1</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="MYR">1436.5</cbc:LineExtensionAmount>
+		<cac:AllowanceCharge>
+			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReason>Sample Description</cbc:AllowanceChargeReason>
+			<cbc:MultiplierFactorNumeric>0.15</cbc:MultiplierFactorNumeric>
+			<cbc:Amount currencyID="MYR">100</cbc:Amount>
+		</cac:AllowanceCharge>
+		<cac:AllowanceCharge>
+			<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReason>Sample Description</cbc:AllowanceChargeReason>
+			<cbc:MultiplierFactorNumeric>0.10</cbc:MultiplierFactorNumeric>
+			<cbc:Amount currencyID="MYR">100</cbc:Amount>
+		</cac:AllowanceCharge>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="MYR">60.00</cbc:TaxAmount>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="MYR">1000.00</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="MYR">60.00</cbc:TaxAmount>
+				<cac:TaxCategory>
+					<cbc:ID>01</cbc:ID>
+					<cbc:Percent>6.00</cbc:Percent>
+					<cac:TaxScheme>
+						<cbc:ID schemeAgencyID="6" schemeID="UN/ECE 5153">OTH</cbc:ID>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+		<cac:Item>
+			<cbc:Description>Laptop Peripherals</cbc:Description>
+			<cac:OriginCountry>
+				<cbc:IdentificationCode>MYS</cbc:IdentificationCode>
+			</cac:OriginCountry>
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="PTC">12344321</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="CLASS">023</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+			<cac:CommodityClassification>
+				<cbc:ItemClassificationCode listID="CLASS">011</cbc:ItemClassificationCode>
+			</cac:CommodityClassification>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="MYR">17</cbc:PriceAmount>
+		</cac:Price>
+		<cac:ItemPriceExtension>
+			<cbc:Amount currencyID="MYR">100</cbc:Amount>
+		</cac:ItemPriceExtension>
+	</cac:InvoiceLine>
+	<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="id-6c0c183fef05c5d5e22b8e630a32adf2">
+		<ds:SignedInfo>
+			<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2006/12/xml-c14n11"/>
+			<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+			<ds:Reference Id="id-doc-signed-data" URI="">
+				<ds:Transforms>
+					<ds:Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116">
+						<ds:XPath>not(//ancestor-or-self::ext:UBLExtensions)</ds:XPath>
+					</ds:Transform>
+					<ds:Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116">
+						<ds:XPath>not(//ancestor-or-self::cac:Signature)</ds:XPath>
+					</ds:Transform>
+					<ds:Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"/>
+				</ds:Transforms>
+				<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+				<ds:DigestValue>WLdVejLuS9MRjTLCZAsRP6lagF+cR+ovQR67oincvfE=</ds:DigestValue>
+			</ds:Reference>
+			<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-6c0c183fef05c5d5e22b8e630a32adf2">
+				<ds:Transforms>
+					<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+				</ds:Transforms>
+				<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+				<ds:DigestValue>sROqNj2PP+bpjmUXe2MIpBLS1/KYgBtuLg03AqcM2k8=</ds:DigestValue>
+			</ds:Reference>
+		</ds:SignedInfo>
+		<ds:SignatureValue Id="value-id-6c0c183fef05c5d5e22b8e630a32adf2">jXdaOM4aSkvLVa1K4k7CstFiYKTmnXOvJHVOT9hOZNrrpMJxky1MHGE3I1NGm96JA3PvYUbzssd1zsMzn6ZmfkzncnKFULFU93chBVkdX6mV688OWk7EN3indT0SxvJ/wV3DUNlG5/qkvWCR8hN5zufLy8mViI40353b+EQzu3U6d90xjVpX0V3WwMln4JJKLV41cK+MHe8h76/B0f4KvIHjri89n3YOciy8uLWQztkZTnfehKSi8+AaLvWM7NqKspvOv0iH/k31gKIBL8adjSDOM1QVXnUwI8z+0wLN6cVKsldSI2lybU4R5OpDeZ0Ic5TTkem4UZ9WL7sdJk1XLw==</ds:SignatureValue>
+		<ds:KeyInfo>
+			<ds:X509Data>
+				<ds:X509Certificate>MIID/jCCAuagAwIBAgIULytIjQaO43lERt+2hc1FcbLfrkMwDQYJKoZIhvcNAQELBQAweTEYMBYGA1UEAwwPRXhhbXBsZSBTZG4gQmhkMQswCQYDVQQGEwJNWTEYMBYGA1UECgwPRXhhbXBsZSBTZG4gQmhkMR0wGwYJKoZIhvcNAQkBFg5leGFtcGxlQHNkbmJoZDEXMBUGA1UEBRMOMTk5OTk5MDEzMjE2NTQwHhcNMjQwNDIwMDcxNzM4WhcNMjUwNDIwMDcxNzM4WjB5MRgwFgYDVQQDDA9FeGFtcGxlIFNkbiBCaGQxCzAJBgNVBAYTAk1ZMRgwFgYDVQQKDA9FeGFtcGxlIFNkbiBCaGQxHTAbBgkqhkiG9w0BCQEWDmV4YW1wbGVAc2RuYmhkMRcwFQYDVQQFEw4xOTk5OTkwMTMyMTY1NDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALqA+UkwaPO4TGg8CkiM2RsVXmHQeWeKgnoOY3J5RejspnHjIyEcqYkRcfRB/yAY56xzvijVJUxCNVZUMl9vrncgoYaq06OTp8KCZyDAt0YLr9mxd6UbOztRVGz/BBoR+QU3MJkvCRZQweAgwDpV+qvKbwSHIQ7qGdajQsx1chriAtHp2+o34h2pCH4FIkujr1DModXgVG4XNAW1UPbZDOkVo4uLizIynbCY3rHwgek8fn9J9l8698IG5p589uZQ+ZXKaful6Ck7Lwv9n9daIsVjqLeaJwXxr4/iVh2JkAOAtv5t7ccdtC3avYvkzc8uRjN3S/IkIQpnd25096k6vDMCAwEAAaN+MHwwHQYDVR0OBBYEFFzDUko10bj+IXkwlGUrfzdS5uwHMB8GA1UdIwQYMBaAFFzDUko10bj+IXkwlGUrfzdS5uwHMA4GA1UdDwEB/wQEAwIF4DAqBgNVHSUBAf8EIDAeBggrBgEFBQcDAQYIKwYBBQUHAwIGCCsGAQUFBwMDMA0GCSqGSIb3DQEBCwUAA4IBAQAxlXMeMrcKO1ofXxFqAzOMKas3JtY3en/2zu5aID1/UiAfcynV0M+qbF4sLQYjPlMskyVhBWo7FEzNuEnif8ccUAYN4RgV5uJLfSkyJwS7/l9ySZ7o6PQeWXtv+KuXxhJIY5Vt5vONRBE9PLQ6Pa/nRnfj7bs2PsTKuKo8WbcylprH3j3n5ODbZCtmI1pvk/iq8G0twvbFvGIKdQLkEMkogi81Lm2AFZNdYzBB5Sa/7mTo6t4DqLoWCG8pJlExHcqPse5u5qHC40Ood+MYsARK2uRuGtrFnBMpRYwwYJ8JFSM/2azv5Zs3OhmEEngPayIT7vPuCEkcM7OLHiW8CGc/</ds:X509Certificate>
+			</ds:X509Data>
+		</ds:KeyInfo>
+		<ds:Object>
+			<xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-6c0c183fef05c5d5e22b8e630a32adf2">
+				<xades:SignedProperties Id="xades-id-6c0c183fef05c5d5e22b8e630a32adf2">
+					<xades:SignedSignatureProperties>
+						<xades:SigningTime>2024-04-22T23:38:09Z</xades:SigningTime>
+						<xades:SigningCertificate>
+							<xades:Cert>
+								<xades:CertDigest>
+									<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+									<ds:DigestValue>CSs+tUsiwHzCbZvxl9fSoDv5sAw5X8ChjbUpRg6wSH8=</ds:DigestValue>
+								</xades:CertDigest>
+								<xades:IssuerSerial>
+									<ds:X509IssuerName>2.5.4.5=#130e3139393939393031333231363534,1.2.840.113549.1.9.1=#160e6578616d706c654073646e626864,O=Example Sdn Bhd,C=MY,CN=Example Sdn Bhd</ds:X509IssuerName>
+									<ds:X509SerialNumber>269287818345375384867465499244557081894436449859</ds:X509SerialNumber>
+								</xades:IssuerSerial>
+							</xades:Cert>
+						</xades:SigningCertificate>
+					</xades:SignedSignatureProperties>
+					<xades:SignedDataObjectProperties>
+						<xades:DataObjectFormat ObjectReference="#id-doc-signed-data">
+							<xades:MimeType>application/octet-stream</xades:MimeType>
+						</xades:DataObjectFormat>
+					</xades:SignedDataObjectProperties>
+				</xades:SignedProperties>
+				<xades:UnsignedProperties>
+					<xades:UnsignedSignatureProperties>
+						<xades:SignatureTimeStamp Id="TS-61cb938b-f902-4771-a661-2d41e9f08fa0">
+							<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+							<xades:EncapsulatedTimeStamp Id="ETS-61cb938b-f902-4771-a661-2d41e9f08fa0">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</xades:EncapsulatedTimeStamp>
+						</xades:SignatureTimeStamp>
+					</xades:UnsignedSignatureProperties>
+				</xades:UnsignedProperties>
+			</xades:QualifyingProperties>
+		</ds:Object>
+	</ds:Signature>
+</Invoice>
